@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="main-page">
+        <header>
+            <div class="top-side">
+                <div class="title">
+                    <div class="title-img">
+                        <img src="./images/title-icon.png" alt="">
+                    </div>
+                    <div class="title-name">
+                        <p>Справочник Ташкента</p>
+                        <a href="#">Sprav.uz</a>
+                    </div>
+                </div>
+                <div class="changing-languages">
+                    <a href="#">Py</a>
+                    <a href="#">O'z</a>
+                    <a href="#">En</a>
+                </div>
+                <div class="changing-languages-small">
+                    <div>
+                        <img src="./icons/dropdown.png" alt="">
+                        <a href="#">Py</a>
+                    </div>
+                    <div>
+                        <img src="./icons/three-dots.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="searching">
+                <div style="cursor: pointer;" class="bar">
+                    <img src="./icons/burger.png" alt="">
+                </div>
+                <div class="input-box">
+                    <div class="dropdown" id="dropdown" onclick="showLocation()">
+                        <div class="button">
+                            <p id="locations">Ташкент</p>
+                            <div>
+                                <img src="./icons/dropdown.png" alt="">
+                            </div>
+                        </div>
+                        <div class="others" id="others">
+                            <a href="#" id="location1" onclick="changeLocation1()">Ташкент</a>
+                            <a href="#" id="location2" onclick="changeLocation2()">Самарканд</a>
+                            <a href="#" id="location3" onclick="changeLocation3()">Хива</a>
+                        </div>
+                    </div>
+                    <div class="inputSide">
+                        <input class="input-search" type="text" placeholder="Поиск">
+                        <div>
+                            <img src="./icons/search.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main-blok">
+                <h1>A-STORE.UZ <span>фирменный магазин</span></h1>
+                <p class="company-contact">Контактные данные компании «GOODZONE МАГАЗИН БЫТОВОЙ ТЕХНИКИ И ЭЛЕКТРОНИКИ» —
+                    телефоны, местонахождение, режим работы, виды деятельности и другая полезная информация. Пожалуйста,
+                    сообщите огранизации, что вы нашли их контакты на сайте Справочник Ташкента — Sprav.uz.</p>
+                <div class="product-blok">
+                    <div class="image-and-map">
+                        <div class="product-image">
+                            <div class="left-side">
+                                <img src="./images/product-photo.png" alt="">
+                            </div>
+                            <div class="right-side">
+                                <p class="product-name">XIAOMI</p>
+                                <div>
+                                    <img src="./icons/pencil.png" alt="">
+                                    <p>с 2022 года</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map">
+                            <div class="branches">
+                                <div class="button" onmouseover="showBranches()">
+                                    <div>
+                                        <p id="branchMain">Филиалы</p>
+                                        <img src="./icons/dropdown.png" alt="">
+                                    </div>
+
+                                    <div class="other-branches" id="otherBranches">
+                                        <a href="#" id="branch1" onclick="showBranch1()">Адрес1</a>
+                                        <a href="#" id="branch2" onclick="showBranch2()">Адрес2</a>
+                                        <a href="#" id="branch3" onclick="showBranch3()">Адрес3</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="map-img">
+                                <img src="./images/map.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addres">
+                        <img src="./icons/location.png" alt="">
+                        <p>Ташкент, Шайхантахурский р-н, пр-т Амира Темура, 129Б</p>
+                    </div>
+                    <div class="addres2">
+                        <img src="./icons/fixed.png" alt="">
+                        <p>I MAXI супермаркет, ЮНУСАБАДСКИЙ РАЙОННЫЙ СУД ПО УГОЛОВНЫМ ДЕЛАМ</p>
+                    </div>
+                    <div class="contacts">
+                        <div class="phone-number">
+                            <div>
+                                <img src="./icons/phone.png" alt="">
+                                <p>+998 71 207-<span id="firstSlot">XX</span>-<span id="secondSlot">XX</span></p>
+                            </div>
+                            <p class="showNumber" onclick="showNumber()">Показать номер</p>
+                        </div>
+                        <div class="breaks">
+                            <div><img src="./icons/clock.png" alt=""></div>
+                            <div>
+                                <p>Сегодня</p>
+                                <p>Перерыв</p>
+                            </div>
+                            <div>
+                                <p>с 10 до 21</p>
+                                <p>без перерыва</p>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div>
+                                <img src="./icons/website.png" alt="">
+                                <a href="#">a-store.uz</a>
+                            </div>
+                            <div>
+                                <img src="./icons/email.png" alt="">
+                                <a href="$">Показать e-mail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map2">
+                        <div class="map-img">
+                            <img src="./images/map.png" alt="">
+                        </div>
+
+                        <div class="branches">
+                            <div class="button active" onclick="buttonMap()">
+                                <div>
+                                    <p id="branchInSmall">Филиалы</p>
+                                    <img src="./icons/dropdown.png" alt="">
+                                </div>
+
+                                <div class="other-branches" id="otherBranchesMap">
+                                    <a onclick="changeBranch1()" id="addres1">Адрес1</a>
+                                    <a onclick="changeBranch2()" id="addres2">Адрес2</a>
+                                    <a onclick="changeBranch3()" id="addres3">Адрес3</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="deliver">Различное профессиональное музыкальное оборудование. Бесплатная доставка
+                        музыкальных инструментов и платная – аксессуаров, таких как струны, подставки и т.д. в пределах
+                        города Ташкента.</p>
+                </div>
+                <div class="footer-navigations">
+                    <div class="left" onclick="toLeft()">
+                        <img src="./icons/left.png" alt="">
+                    </div>
+                    <div class="other-extra-blocks" id="extraBlocks">
+                        <div>
+                            <a href="#">Информация</a>
+                            <span></span>
+                        </div>
+                        <div>
+                            <a href="#">Фотогалерея</a>
+                            <span></span>
+                        </div>
+                        <div>
+                            <a href="#">График работы</a>
+                            <span></span>
+                        </div>
+                        <div>
+                            <a href="#">Виды деятельности</a>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <aside></aside>
+        </main>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
