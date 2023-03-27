@@ -689,11 +689,6 @@ main .main-blok .footer-navigations .left {
   cursor: pointer;
   margin-right: 10px;
 }
-@media (min-width: 1024px) {
-  main .main-blok .footer-navigations .left {
-    display: none;
-  }
-}
 @media (max-width: 530px) {
   main .main-blok .footer-navigations .left {
     display: none;
